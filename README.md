@@ -22,7 +22,7 @@ include "easySQLite3.class.php";
 
 Full documentation on how to use the class is in the [Wiki](https://github.com/AyoobAli/easySQLite3/wiki)
 
-## License
+## License - GPLv3
 
 Copyright (C) 2020  Ayoob Ali
 
