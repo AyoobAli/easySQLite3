@@ -2,13 +2,6 @@
 
 <sub>[easySQLite3 v0.1.0 (Beta)]</sub>
 
-<style>
-img {
-  display: block;
-  margin: 0 auto;
-}
-</style>
-
 easySQLite3 is a PHP class that makes talking to SQLite3 Database easier, and it takes care of prepared statements to securely communicate with the database and prevent SQL-Injections.
 
 `NOTE:` This Class is still in Beta release. Please don't use this release in a production system.
@@ -27,7 +20,7 @@ include "easySQLite3.class.php";
 ?>
 ```
 
-Full documentation on how to use the class is in the Wiki
+Full documentation on how to use the class is in the [Wiki](wiki)
 
 ## License
 
