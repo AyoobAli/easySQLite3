@@ -6,7 +6,7 @@ easySQLite3 is a PHP class that makes talking to SQLite3 Database easier, and it
 
 `NOTE:` This Class is still in Beta release. Please don't use this release in a production system.
 
-![easySQLite3](.img/easySQLite3.png)
+![easySQLite3](.img/easySQLite3-banner.png)
 
 ## Install
 
