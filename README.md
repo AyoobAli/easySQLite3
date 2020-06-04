@@ -1,6 +1,6 @@
 # easySQLite3
 
-<sub>[easySQLite3 v0.1.0 (Beta)]</sub>
+<sub>[easySQLite3 v0.1.1 (Beta)]</sub>
 
 easySQLite3 is a PHP class that makes talking to SQLite3 Database easier, and it takes care of prepared statements to securely communicate with the database and prevent SQL-Injections.
 
@@ -39,6 +39,10 @@ You should have received a copy of the GNU General Public License along with thi
 - Option to Encrypt the database before disconnecting, and decrypt when connecting using AES Encryption.
 
 ## Change Log
+
+[2020-06-04] v0.1.1 (Beta):
+
+- [Added] Option to pass an Encryption Password if SQLite encryption module is installed.
 
 [2020-04-11] v0.1.0 (Beta):
 

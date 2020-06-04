@@ -6,8 +6,8 @@
  * Author: Ayoob Ali
  * Website: www.Ayoob.ae
  * License: GNU GPLv3
- * Version: v0.1.0
- * Date: 2020-04-11
+ * Version: v0.1.1
+ * Date: 2020-06-04
  */
 
 /**
@@ -51,7 +51,7 @@ class easySQLite3 extends SQLite3
     ### 
     ### Class Construct
     ###
-    function __construct($database = "") {
+    function __construct($database = "", $password = "") {
         if (isset($database) && !empty($database)) {
             $this->connect($database);
         }
@@ -433,13 +433,13 @@ class easySQLite3 extends SQLite3
     ### 
     ### Connecting to Database
     ###
-    public function connect($database = "") {
+    public function connect($database = "", $password = "") {
         if ($this->connected === true) {
             $this->msg("[Connect]: Database already connected.", 2);
             return false;
         }
         if ( !empty($database) ) {
-            $this->db = new SQLite3($database);
+            $this->db = new SQLite3($database, SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE, $password);
             if (is_object($this->db)) {
                 $this->connected = true;
                 $this->dbName = $database;
